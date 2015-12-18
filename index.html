@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>IEEE764</title>
+  <script type="text/javascript" language="JavaScript">
+var nros = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
+function calcularNro() {
+   var xhttp = new XMLHttpRequest();
+   xhttp.onreadystatechange = function() {
+      if (xhttp.readyState == 4 && xhttp.status == 200) {
+         document.getElementById("numero").innerHTML = xhttp.responseText;
+      }
+   };
+   var a_calcular = "";
+   var i = 0;
+   for (; i < nros.length; i++) {
+      a_calcular += nros[i];
+   }
+   xhttp.open("GET", "ieee754.php?numero=" + a_calcular, true);
+   xhttp.send();
+}
+function cambiarNro(e) {
+   if (nros[e] == "0") {
+      nros[e] = "1";
+   } else {
+      nros[e] = "0";
+   }
+   var identificador = "pos";
+   if (e < 10) {
+      identificador += "0" + e;
+   } else {
+      identificador += e;
+   }
+   document.getElementById(identificador).innerHTML = '<img src="img/' + nros[e] + 'football.jpg" alt="' + nros[e] + '" style="width:73px;height:90px;">';
+   calcularNro();
+}
+  </script>
+ </head>
+ <body>
+  <h1>Ejercicio</h1>
+  <p>Basado en el standard <a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format">IEEE754</a>. Número en coma flotante de simple precisión.</p>
+  <p>Haga click sobre los números binarios para cambiar su estado y elegir el binario deseado.</p>
+  <table style="width:584px">
+   <tr>
+    <td id="pos31" onclick="cambiarNro(31)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos30" onclick="cambiarNro(30)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos29" onclick="cambiarNro(29)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos28" onclick="cambiarNro(28)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos27" onclick="cambiarNro(27)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos26" onclick="cambiarNro(26)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos25" onclick="cambiarNro(25)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos24" onclick="cambiarNro(24)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+   </tr>
+   <tr>
+    <td id="pos23" onclick="cambiarNro(23)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos22" onclick="cambiarNro(22)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos21" onclick="cambiarNro(21)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos20" onclick="cambiarNro(20)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos19" onclick="cambiarNro(19)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos18" onclick="cambiarNro(18)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos17" onclick="cambiarNro(17)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos16" onclick="cambiarNro(16)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+   </tr>
+   <tr>
+    <td id="pos15" onclick="cambiarNro(15)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos14" onclick="cambiarNro(14)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos13" onclick="cambiarNro(13)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos12" onclick="cambiarNro(12)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos11" onclick="cambiarNro(11)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos10" onclick="cambiarNro(10)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos09" onclick="cambiarNro(9)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos08" onclick="cambiarNro(8)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+   </tr>
+   <tr>
+    <td id="pos07" onclick="cambiarNro(7)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos06" onclick="cambiarNro(6)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos05" onclick="cambiarNro(5)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos04" onclick="cambiarNro(4)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos03" onclick="cambiarNro(3)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos02" onclick="cambiarNro(2)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos01" onclick="cambiarNro(1)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos00" onclick="cambiarNro(0)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+   </tr>
+  </table>
+  <p>El número representado por el binario anterior es: <b id="numero">0</b></p>
+ </body>
+</html>
