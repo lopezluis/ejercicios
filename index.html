@@ -38,11 +38,20 @@ function cambiarNro(e) {
  </head>
  <body>
   <h1>Ejercicio</h1>
-  <p>Basado en el standard <a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format">IEEE754</a>. Número en coma flotante de simple precisión.</p>
+  <p>Basado en el standard <a href="https://en.wikipedia.org/wiki/Single-precision_floating-point_format">IEEE754</a>. Número de 32 bits en coma flotante de simple precisión.</p>
   <p>Haga click sobre los números binarios para cambiar su estado y elegir el binario deseado.</p>
   <table style="width:584px">
    <tr>
+    <td colspan="23"><h2>Signo</h2></td>
+   </tr>
+   <tr>
     <td id="pos31" onclick="cambiarNro(31)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td calspan="22"></td>
+   </tr>
+   <tr>
+    <td colspan="23"><h2>Exponente</h2></td>
+   </tr>
+   <tr>
     <td id="pos30" onclick="cambiarNro(30)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos29" onclick="cambiarNro(29)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos28" onclick="cambiarNro(28)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
@@ -50,9 +59,13 @@ function cambiarNro(e) {
     <td id="pos26" onclick="cambiarNro(26)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos25" onclick="cambiarNro(25)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos24" onclick="cambiarNro(24)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td id="pos23" onclick="cambiarNro(23)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td colspan="15"></td>
    </tr>
    <tr>
-    <td id="pos23" onclick="cambiarNro(23)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
+    <td colspan="23"><h2>Fracci&oacute;n</h2></td>
+   </tr>
+   <tr>
     <td id="pos22" onclick="cambiarNro(22)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos21" onclick="cambiarNro(21)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos20" onclick="cambiarNro(20)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
@@ -60,8 +73,6 @@ function cambiarNro(e) {
     <td id="pos18" onclick="cambiarNro(18)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos17" onclick="cambiarNro(17)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos16" onclick="cambiarNro(16)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
-   </tr>
-   <tr>
     <td id="pos15" onclick="cambiarNro(15)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos14" onclick="cambiarNro(14)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos13" onclick="cambiarNro(13)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
@@ -70,8 +81,6 @@ function cambiarNro(e) {
     <td id="pos10" onclick="cambiarNro(10)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos09" onclick="cambiarNro(9)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos08" onclick="cambiarNro(8)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
-   </tr>
-   <tr>
     <td id="pos07" onclick="cambiarNro(7)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos06" onclick="cambiarNro(6)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
     <td id="pos05" onclick="cambiarNro(5)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
@@ -82,6 +91,6 @@ function cambiarNro(e) {
     <td id="pos00" onclick="cambiarNro(0)"><img src="img/0football.jpg" alt="0" style="width:73px;height:90px;"></td>
    </tr>
   </table>
-  <p>El número representado por el binario anterior es: <b id="numero">0</b></p>
+  <p>El número representado por el binario anterior es: <b id="numero">5.8774717541114E-39</b></p>
  </body>
 </html>
